@@ -37,11 +37,11 @@
 
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/v26.loader.js";
+      var loaderUrl = buildUrl + "/v28.loader.js";
       var config = {
-        dataUrl: buildUrl + "/v26.data.br",
-        frameworkUrl: buildUrl + "/v26.framework.js.br",
-        codeUrl: buildUrl + "/v26.wasm.br",
+        dataUrl: buildUrl + "/v28.data.gz",
+        frameworkUrl: buildUrl + "/v28.framework.js.gz",
+        codeUrl: buildUrl + "/v28.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "My project",
@@ -64,33 +64,7 @@
             };
 
       document.body.appendChild(script);
-	canvas.addEventListener("mouseup", tapOrClick, false);
- canvas.addEventListener("touchend", tapOrClick, false);
 
-
-function fullScreenAPI() {
- var ua = navigator.userAgent.toLowerCase();
- var isAndroid = ua.indexOf("android") > -1;
- if (isAndroid) {
- GoFullScreen(document.documentElement);
- }
- }
-function GoFullScreen(element) {
- if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
- if (element.requestFullscreen && document.fullscreenEnabled) {
- 	element.requestFullscreen();
- 	}
- else if (element.mozRequestFullScreen) {
- 	element.mozRequestFullScreen();
- 	}
- else if (element.webkitRequestFullscreen) {
- 	element.webkitRequestFullscreen();
- 	}
- else if (element.msRequestFullscreen) {
- 	element.msRequestFullscreen();
- 	}
- }
- }
     </script>
   </body>
 </html>
